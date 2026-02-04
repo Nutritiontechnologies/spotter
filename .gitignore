@@ -1,0 +1,62 @@
+# --- Go Binaries & Build Artifacts ---
+# Binaries created by 'go build'
+/bin/
+/dist/
+*.exe
+*.test
+*.prof
+
+# Output of the go coverage tool
+*.out
+coverage.txt
+
+# --- Go Modules & Workspaces ---
+# Local workspace file (Go 1.18+)
+go.work
+go.work.sum
+
+# Vendor directory (uncomment if you are NOT using Go Modules vendoring)
+# vendor/
+
+# --- System Metadata ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# --- IDEs & Editors ---
+# JetBrains (GoLand, IntelliJ)
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+
+# --- Local Configuration ---
+# NEVER commit environment variable files containing secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# --- Testing & Logs ---
+# Test logs or general logs if generated locally
+*.log
+test_results/
